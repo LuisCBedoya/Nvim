@@ -1,7 +1,6 @@
 require("plugins")
 require("keybindings")
 require("options")
--- require'nvim-tree'.setup {}
 require("nvim-tree-config")
 require("lualine-config")
 require("bufferline-config")
@@ -18,4 +17,3 @@ require("comment-config")
 require("nightfox-theme-config")
 require("lsp")
 -- require("onedark").load()
-
