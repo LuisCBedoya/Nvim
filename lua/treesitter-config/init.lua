@@ -18,6 +18,8 @@ require("nvim-treesitter.configs").setup({
         "json",
         "php",
         "vim",
+        "java",
+        "bash",
     },
 
     highlight = {

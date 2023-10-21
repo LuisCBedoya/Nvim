@@ -19,6 +19,8 @@ return require("packer").startup({
         use({ "wbthomason/packer.nvim" })
         -- nightfox theme
         use({ "EdenEast/nightfox.nvim" })
+        -- gruvbox theme
+        use({ "ellisonleao/gruvbox.nvim" })
         -- a statusline
         use({ "nvim-lualine/lualine.nvim" })
         -- bufferline
@@ -33,6 +35,8 @@ return require("packer").startup({
         use({ "kkharji/lspsaga.nvim" })
         -- syntax
         use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+        -- for java
+        use({ "mfussenegger/nvim-jdtls" })
         -- autopairs
         use({ "windwp/nvim-autopairs" })
         -- autotag
@@ -55,6 +59,7 @@ return require("packer").startup({
         use({ "hrsh7th/vim-vsnip-integ" })
         -- brackes colorizer
         use({ "p00f/nvim-ts-rainbow" })
+        use({ "onsails/lspkind.nvim" })
         -- ----------------------------------------------------------------------------------------------
         -- keybindings in popup
         use({ "folke/which-key.nvim" })
