@@ -1,16 +1,19 @@
 local null_ls = require("null-ls")
 local lSsources = {
     null_ls.builtins.formatting.prettier.with({
-        filetypes = {
-            "javascript",
-            "typescript",
-            "css",
-            "scss",
-            "html",
-            "json",
-            "markdown",
-            "md",
-            "txt",
+        -- filetypes = {
+        --     "javascript",
+        --     "typescript",
+        --     "css",
+        --     "scss",
+        --     "html",
+        --     "json",
+        --     "markdown",
+        --     "md",
+        --     "txt",
+        -- },
+        env = {
+            PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("/home/luc/.config/nvim/linter-config/prettierrc.json"),
         },
     }),
     null_ls.builtins.formatting.stylua.with({
