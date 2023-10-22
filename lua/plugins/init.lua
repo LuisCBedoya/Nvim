@@ -27,6 +27,15 @@ return require("packer").startup({
         use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
         -- file explorer
         use({ "nvim-tree/nvim-tree.lua" })
+        -- -- nvim-ufo
+        use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
+        -- statuscol for fix problem nvim-ufo
+        use({ "luukvbaal/statuscol.nvim" })
+        -- fidget
+        use({
+            "j-hui/fidget.nvim",
+            tag = "legacy",
+        })
         -- Find, Filter, Preview, Pick. All lua, all the time.
         use({ "nvim-telescope/telescope.nvim", tag = "0.1.4", requires = { { "nvim-lua/plenary.nvim" } } })
 
