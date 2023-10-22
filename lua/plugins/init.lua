@@ -17,10 +17,12 @@ return require("packer").startup({
         -- ----------------------------------------------------------------------------------------------------------------------
         -- packer plugin manager
         use({ "wbthomason/packer.nvim" })
+        -- enable icons
+        use({ "nvim-tree/nvim-web-devicons" })
         -- nightfox theme
         use({ "EdenEast/nightfox.nvim" })
         -- gruvbox theme
-        use({ "ellisonleao/gruvbox.nvim" })
+        -- use({ "ellisonleao/gruvbox.nvim" })
         -- a statusline
         use({ "nvim-lualine/lualine.nvim" })
         -- bufferline
@@ -72,8 +74,6 @@ return require("packer").startup({
         -- ----------------------------------------------------------------------------------------------
         -- keybindings in popup
         use({ "folke/which-key.nvim" })
-        -- enable icons
-        use({ "nvim-tree/nvim-web-devicons" })
         -- git info
         use({
             "lewis6991/gitsigns.nvim",
