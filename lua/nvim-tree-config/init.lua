@@ -7,10 +7,21 @@ require('nvim-tree').setup({
     width = 40,
     side = 'left',
   },
-  renderer = {
-    group_empty = true,
-  },
   filters = {
     dotfiles = true,
+  },
+  diagnostics = {
+    enable = false,
+    icons = {
+      hint = '',
+      info = '',
+      warning = '',
+      error = '',
+    },
+  },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
   },
 })
