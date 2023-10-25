@@ -1,4 +1,4 @@
-##Neovim as an IDE
+## Neovim as an IDE
 Neovim configuration made from scratch.
 
 ![W6](https://github.com/LuisCBedoya/Nvim/assets/90487955/5ee924b2-195b-42f0-b5b6-f294284bdbf2)
