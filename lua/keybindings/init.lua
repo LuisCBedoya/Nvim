@@ -44,3 +44,9 @@ map('n', '<C-Space>', ':', { noremap = true, silent = false })
 --   { noremap = true, silent = true }
 -- )
 -- map('n', '<C-d>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>", { noremap = true, silent = true })
+
+map('n', '<A-j>', '<C-W>j', { noremap = true, silent = false })
+map('n', '<A-k>', '<C-W>k', { noremap = true, silent = false })
+
+map('n', '<A-h>', '<C-W>h', { noremap = true, silent = false })
+map('n', '<A-l>', '<C-W>l', { noremap = true, silent = false })
