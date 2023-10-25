@@ -1,22 +1,15 @@
 local null_ls = require('null-ls')
+
 local lSsources = {
   null_ls.builtins.formatting.prettier.with({
-    -- filetypes = {
-    --     "javascript",
-    --     "typescript",
-    --     "css",
-    --     "scss",
-    --     "html",
-    --     "json",
-    --     "markdown",
-    --     "md",
-    --     "txt",
-    -- },
     env = {
-      PRETTIERD_DEFAULT_CONFIG = vim.fn.expand('/home/luc/.config/nvim/formatter-config/prettierrc.json'),
+      PRETTIERD_DEFAULT_CONFIG = vim.fn.expand('/home/luc/.config/nvim/formatter-config/.prettierrc.json'),
     },
   }),
   null_ls.builtins.formatting.stylua.with({
+    -- env = {
+    -- 	STYLUA_DEFAULT_CONFIG = vim.fn.expand("/home/luc/.config/nvim/formatter-config/.stylua.toml"),
+    -- },
     extra_args = { '--config-path', vim.fn.expand('/home/luc/.config/nvim/formatter-config/.stylua.toml') },
     -- args = { "--indent-width", "4", "--indent-type", "Spaces", "-" },
   }),
@@ -35,12 +28,12 @@ require('null-ls').setup({
   on_attach = function(client, bufnr)
     if client.supports_method('textDocument/formatting') then
       -- vim.cmd([[
-      --   augroup document_highlight
-      --   autocmd! * <buffer>
-      --   autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-      --   autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-      --   augroup END
-      -- ]])
+      --       augroup document_highlight
+      --       autocmd! * <buffer>
+      --       autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+      --       autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+      --       augroup END
+      --     ]])
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
       vim.api.nvim_create_autocmd('BufWritePre', {
         group = augroup,

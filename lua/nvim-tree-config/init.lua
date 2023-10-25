@@ -1,8 +1,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
-vim.o.confirm = true
-
 require('nvim-tree').setup({
   sort_by = 'case_sensitive',
   view = {
@@ -28,6 +26,7 @@ require('nvim-tree').setup({
   },
 })
 
+vim.o.confirm = true
 vim.api.nvim_create_autocmd('BufEnter', {
   group = vim.api.nvim_create_augroup('NvimTreeClose', { clear = true }),
   callback = function()

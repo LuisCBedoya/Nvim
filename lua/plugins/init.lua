@@ -21,18 +21,21 @@ return require('packer').startup({
     use({ 'nvim-tree/nvim-web-devicons' })
     -- nightfox theme
     use({ 'EdenEast/nightfox.nvim' })
-    -- gruvbox theme
-    -- use({ "ellisonleao/gruvbox.nvim" })
     -- a statusline
     use({ 'nvim-lualine/lualine.nvim' })
     -- bufferline
     use({ 'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' })
     -- file explorer
     use({ 'nvim-tree/nvim-tree.lua' })
+    --  neoscroll
+    use({ 'karb94/neoscroll.nvim' })
     -- -- nvim-ufo
     use({ 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' })
     -- statuscol for fix problem nvim-ufo
     use({ 'luukvbaal/statuscol.nvim' })
+    -- autoruner
+    -- use({ "krshrimali/nvim-autorunner" })
+    -- use({ "rcarriga/nvim-notify" })
     -- -- fidget
     -- use({
     --     "j-hui/fidget.nvim",
@@ -83,6 +86,8 @@ return require('packer').startup({
     })
     -- git fugitive
     use({ 'tpope/vim-fugitive' })
+    -- cool-substitute
+    use({ 'otavioschwanck/cool-substitute.nvim' })
     -- nvim-surround
     use({
       'kylechui/nvim-surround',
@@ -105,8 +110,8 @@ return require('packer').startup({
     use({ 'williamboman/mason.nvim', 'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig' })
     -- format null-ls
     use({ 'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')" })
-    -- -- onedark theme
-    -- use({ 'navarasu/onedark.nvim' })
+    -- onedark theme
+    -- use({ "navarasu/onedark.nvim" })
   end,
   -- --------------------------------------------------------------------------------------------------------------------------------------
   config = {

@@ -8,11 +8,11 @@ map('n', '<s-tab>', ':bprevious<CR>', { noremap = true, silent = false })
 -- tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
+-- map('', '<C-u>', '<nop>', { noremap = true, silent = true })
+-- map('', '<C-d>', '<nop>', { noremap = true, silent = true })
+
 map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
-
-map('n', '<C-u>', '{', { noremap = true, silent = true })
-map('n', '<C-d>', '}', { noremap = true, silent = true })
 
 map('i', 'jk', '<ESC>', { noremap = true, silent = false })
 map('i', 'jk', '<ESC>', { noremap = true, silent = false })

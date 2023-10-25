@@ -22,7 +22,7 @@ local mappings = {
     name = 'Terminal',
     t = { ':ToggleTerm<cr>', 'Split Below' },
     f = { toggle_float, 'Floating Terminal' },
-    l = { toggle_lazygit, 'LazyGit' },
+    -- l = { toggle_lazygit, 'LazyGit' },
   },
   l = {
     name = 'LSP',
@@ -45,11 +45,11 @@ local mappings = {
     n = { '<cmd>Lspsaga diagnostic_jump_next<cr>', 'Go To Next Diagnostic' },
     N = { '<cmd>Lspsaga diagnostic_jump_prev<cr>', 'Go To Previous Diagnostic' },
   },
-  z = {
-    name = 'Focus',
-    z = { ':ZenMode<cr>', 'Toggle Zen Mode' },
-    t = { ':Twilight<cr>', 'Toggle Twilight' },
-  },
+  -- z = {
+  --     name = "Focus",
+  --     z = { ":ZenMode<cr>", "Toggle Zen Mode" },
+  --     t = { ":Twilight<cr>", "Toggle Twilight" },
+  -- },
   p = {
     name = 'Packer',
     r = { ':PackerClean<cr>', 'Remove Unused Plugins' },
@@ -66,7 +66,7 @@ local mappings = {
     i = { ':NullLsInfo<cr>', 'Nulls Info' },
   },
 }
-local opts = { prefix = '<leader>' }
+
 local setup = {
   icons = {
     breadcrumb = '»', -- symbol used in the command line area that shows your active key combo
@@ -75,5 +75,10 @@ local setup = {
   },
   ignore_missing = true,
 }
+
+local opts = {
+  prefix = '<leader>',
+}
+
 wk.setup(setup)
 wk.register(mappings, opts)
