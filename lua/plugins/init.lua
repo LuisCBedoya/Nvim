@@ -24,11 +24,9 @@ return require('packer').startup({
     -- a statusline
     use({ 'nvim-lualine/lualine.nvim' })
     -- bufferline
-    use({ 'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' })
+    use({ 'akinsho/bufferline.nvim', tag = '*'})
     -- file explorer
     use({ 'nvim-tree/nvim-tree.lua' })
-    --  neoscroll
-    use({ 'karb94/neoscroll.nvim' })
     -- -- nvim-ufo
     use({ 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' })
     -- statuscol for fix problem nvim-ufo
@@ -78,26 +76,21 @@ return require('packer').startup({
     -- keybindings in popup
     use({ 'folke/which-key.nvim' })
     -- gitsigns info
-    use({
-      'lewis6991/gitsigns.nvim',
-      config = function()
-        require('gitsigns').setup({ current_line_blame = true })
-      end,
-    })
+    use({'lewis6991/gitsigns.nvim'})
     -- git fugitive
     use({ 'tpope/vim-fugitive' })
-    -- cool-substitute
-    use({ 'otavioschwanck/cool-substitute.nvim' })
+    -- -- cool-substitute
+    -- use({ 'otavioschwanck/cool-substitute.nvim' })
     -- nvim-surround
-    use({
-      'kylechui/nvim-surround',
-      tag = '*', -- Use for stability; omit to use `main` branch for the latest features
-      config = function()
-        require('nvim-surround').setup({
-          -- Configuration here, or leave empty to use defaults
-        })
-      end,
-    })
+    -- use({
+    --   'kylechui/nvim-surround',
+    --   tag = '*', -- Use for stability; omit to use `main` branch for the latest features
+    --   config = function()
+    --     require('nvim-surround').setup({
+    --       -- Configuration here, or leave empty to use defaults
+    --     })
+    --   end,
+    -- })
     -- toggleterm
     use({
       'akinsho/toggleterm.nvim',
