@@ -92,13 +92,7 @@ return require('packer').startup({
     --   end,
     -- })
     -- toggleterm
-    use({
-      'akinsho/toggleterm.nvim',
-      tag = '*',
-      config = function()
-        require('toggleterm').setup()
-      end,
-    })
+    use({'akinsho/toggleterm.nvim',tag = '*'})
     -- Mason installer
     use({ 'williamboman/mason.nvim', 'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig' })
     -- format null-ls
