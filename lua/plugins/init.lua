@@ -31,17 +31,8 @@ return require('packer').startup({
     use({ 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' })
     -- statuscol for fix problem nvim-ufo
     use({ 'luukvbaal/statuscol.nvim' })
-    -- autoruner
-    -- use({ "krshrimali/nvim-autorunner" })
-    -- use({ "rcarriga/nvim-notify" })
-    -- -- fidget
-    -- use({
-    --     "j-hui/fidget.nvim",
-    --     tag = "legacy",
-    -- })
-    -- Find, Filter, Preview, Pick. All lua, all the time.
+   -- Find, Filter, Preview, Pick. All lua, all the time.
     use({ 'nvim-telescope/telescope.nvim', tag = '0.1.4', requires = { { 'nvim-lua/plenary.nvim' } } })
-
     -- treesitter and modules -----------------------------------------------------
     --lspsaga
     use({ 'kkharji/lspsaga.nvim' })
@@ -79,26 +70,12 @@ return require('packer').startup({
     use({'lewis6991/gitsigns.nvim'})
     -- git fugitive
     use({ 'tpope/vim-fugitive' })
-    -- -- cool-substitute
-    -- use({ 'otavioschwanck/cool-substitute.nvim' })
-    -- nvim-surround
-    -- use({
-    --   'kylechui/nvim-surround',
-    --   tag = '*', -- Use for stability; omit to use `main` branch for the latest features
-    --   config = function()
-    --     require('nvim-surround').setup({
-    --       -- Configuration here, or leave empty to use defaults
-    --     })
-    --   end,
-    -- })
     -- toggleterm
     use({'akinsho/toggleterm.nvim',tag = '*'})
     -- Mason installer
     use({ 'williamboman/mason.nvim', 'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig' })
     -- format null-ls
     use({ 'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')" })
-    -- onedark theme
-    -- use({ "navarasu/onedark.nvim" })
   end,
   -- --------------------------------------------------------------------------------------------------------------------------------------
   config = {
